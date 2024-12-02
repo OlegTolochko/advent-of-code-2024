@@ -11,7 +11,7 @@ left.sort()
 right.sort()
 total_dist = 0
 for l, r in zip(left,right):
-    dist = math.sqrt((l-r)**2)
+    dist = abs(l-r)
     total_dist += dist
 
 print(total_dist)
